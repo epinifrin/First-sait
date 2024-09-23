@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: darkblue;
+        font-style: 16px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: rgb(247,241,185);
+    background: linear-gradient(90deg, rgba(247,241,185,1) 50%, rgba(176,218,201,1) 100%);
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;   
+}
+
+header nav ul li a {
+    color:blue
+}
+
+header nav ul li.active::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: rgb(110, 110, 197);
+    border-radius: 10px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 3px solid rgb(110, 110, 197);
+}
+
+header nav ul li.btn a {
+    background: rgba(252, 209, 93, 0.801);
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: rgb(238, 163, 113);
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info{
+    width: 700px;
+    padding-top: 70px;
+    float: right;
+}
+
+.hero--info h2 {
+    color: rgb(11, 11, 143);
+    font-size: 20px;
+    font-weight: 900px;
+}
+
+.hero--info h1 {
+    color: rgb(11, 11, 143);
+    font-size: 50px;
+    font-weight: 600px;
+}
+
+.hero--info p {
+    font-weight: 500px;
+    line-height: 150%;
+    margin: 30px;
+}
+
+.hero--info .btn {
+    background: rgb(231, 171, 136);
+    color:rgb(11, 11, 143);
+    border-radius: 50px;
+    padding: 15px 30px;
+    border:0;
+    transition: all 500ms ease;
+    font-size: 15px;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    position: absolute;
+    top: 50%;
+    height: 400%;
+    float:left;
+}
